@@ -42,5 +42,6 @@ qtde = st.slider("Quantidade", 0, 100)
 
 total_preco = sum(compras[content].values()) * qtde
 
-st.metric(label="Preço", value=f"R$ {total_preco}")  
+// Não precisa especificar label e value
+st.metric("Preço", f"R$ {total_preco}")  
 
